@@ -1645,9 +1645,9 @@ section {
   position: relative;
   z-index: 200;
 }
-.contact .end2 > div {
-  /* width: calc(100% / 2); */
-}
+/* .contact .end2 > div {
+  width: calc(100% / 2);
+} */
 .contact .end2 > div:first-child p {
   font-size: 30px;
   color: #333;
