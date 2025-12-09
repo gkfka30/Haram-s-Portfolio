@@ -47,14 +47,14 @@ setInterval(function () {
 // 영화 이미지 슬라이드
 // linear easing 적용
 setInterval(function () {
-  $(".m1 ul").animate(
+  $(".m1 > ul").animate(
     { "margin-left": "-100%" },
     {
       duration: 300, // 애니메이션 시간
       easing: "linear", // linear easing 적용
       complete: function () {
-        $(".m1 ul li:first-child").appendTo(".m1 ul");
-        $(".m1 ul").css({ "margin-left": "0%" });
+        $(".m1 > ul li:first-child").appendTo(".m1 ul");
+        $(".m1 > ul").css({ "margin-left": "0%" });
       },
     }
   );
@@ -71,7 +71,7 @@ setInterval(function () {
 
 // con08
 $(function () {
-  let total = $(".fu1 ul li").length;
+  let total = $(".fu1 > ul > li").length;
   let i = 0;
   setInterval(function () {
     if (i == total - 1) {
@@ -79,8 +79,8 @@ $(function () {
     } else {
       i++;
     }
-    $(".fu1 ul li").stop().fadeOut();
-    $(".fu1 ul li").eq(i).stop().fadeIn();
+    $(".fu1 > ul > li").stop().fadeOut();
+    $(".fu1 > ul > li").eq(i).stop().fadeIn();
   }, 2800);
 });
 
