@@ -267,9 +267,9 @@ section {
 #visual .strok {
   /* width: 100%; */
   transition: 1s;
-  font-size: 18vw;
+  font-size: 16vw;
   text-align: center;
-  transform: translateY(-30px);
+  transform: translateY(-100px);
   color: #93da97;
 }
 #visual .strok:hover {
