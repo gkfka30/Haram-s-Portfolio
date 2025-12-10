@@ -86,9 +86,9 @@ $(function () {
 
 // con11 여행사 슬라이드
 setInterval(function () {
-  $(".trip1 ul").animate({ "margin-left": "-100%" }, function () {
-    $(".trip1 ul li:first-child").appendTo(".trip1 ul");
-    $(".trip1 ul").css({ "margin-left": "0px" });
+  $(".trip1 > ul").animate({ "margin-left": "-100%" }, function () {
+    $(".trip1 > ul > li:first-child").appendTo(".trip1 > ul");
+    $(".trip1 > ul").css({ "margin-left": "0px" });
   });
 }, 2800);
 

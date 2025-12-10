@@ -118,6 +118,15 @@
   font-display: swap;
 }
 
+/* 카페24 당당해 */
+@font-face {
+  font-family: "Cafe24Dangdanghae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 /* 기본 스타일 */
 * {
   margin: 0px;
@@ -153,7 +162,7 @@ p {
 @media (min-width: 1024px) {
   section {
     width: 1200px;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -167,6 +176,10 @@ p {
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
+  }
+  section {
+    height: 100%;
+    padding: 20px;
   }
   h3 {
     font-family: "Pretendard";
@@ -185,9 +198,13 @@ p {
   }
 
   /* con01  */
+  .con01 {
+    padding: 20px;
+  }
   .con01 .resume-container li {
     font-size: 16px;
   }
+
   /* con02 */
   .con02 .brandingBox01 span {
     font-size: 23px;
@@ -221,6 +238,13 @@ p {
     font-size: 25px;
   }
 
+  /* .con05  */
+  .con05 .Todomock img {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+  }
+
   /* con07  */
   .con07 .movie {
     flex-direction: column;
@@ -235,6 +259,76 @@ p {
     gap: 10px;
     align-items: center;
   }
+
+  /* con08 */
+  .con08 .full h3 {
+    display: none;
+  }
+
+  .con08 .full .fu1 ul {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .con08 .full .fu1 ul li {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* con09  */
+  .con09 .dessert .d2 h3 {
+    display: none;
+  }
+
+  /* con10  */
+  .con10 .ho2 img {
+    width: 100%;
+  }
+  .con10 .ho3 img {
+    width: 100%;
+  }
+
+  /* con11  */
+  .con11 .travel .trip2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* con12  */
+  /* .con12 .artWork .art1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  } */
+
+  /* con13  */
+  .con13 .business .bus1 {
+    display: none;
+  }
+
+  .con13 .business .bus2 {
+    width: 50%;
+    height: 50%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .con13 .business .simply-scroll-clip {
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+    /* transform: rotate(-5deg); */
+  }
+  .con13 .business .simply-scroll-clip img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* 모바일 */
@@ -246,6 +340,13 @@ p {
     overflow: hidden;
     box-sizing: border-box;
   }
+  #container {
+    width: 100%;
+  }
+  section {
+    height: 100%;
+    padding: 20px;
+  }
   h3 {
     font-family: "Pretendard";
     font-weight: 700;
@@ -254,14 +355,16 @@ p {
   p {
     font-family: "Pretendard";
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
   }
   /* con01  */
   /* --- 반응형 디자인 --- */
-
+  .con01 {
+    padding: 20px;
+  }
   .con01 .resume-container {
     padding: 10px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   /* 화면이 좁아지면 카드들을 세로로 쌓음 */
   .con01 .section-row {
@@ -300,6 +403,13 @@ p {
     font-size: 15px;
   }
 
+  /* .con05  */
+  .con05 .Todomock img {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+  }
+
   /* con07  */
   .con07 .movie {
     flex-direction: column;
@@ -314,8 +424,112 @@ p {
     gap: 10px;
     align-items: center;
   }
-}
 
+  /* con08 */
+
+  .con08 .full .fu2 h3 {
+    display: none;
+  }
+  .con08 .full .fu2 img {
+    display: none;
+  }
+
+  .con08 .full .fu1 ul {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .con08 .full .fu1 ul li {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* con09 */
+  .con09 .dessert .d2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .con09 .dessert .d2 h3 {
+    display: none;
+  }
+
+  /* con10  */
+
+  /* con10  */
+  .con10 .ho2 img {
+    width: 100%;
+  }
+  .con10 .ho3 img {
+    width: 100%;
+  }
+
+  /* .con11 */
+  .con11 {
+    padding: 10px;
+  }
+  .con11 .travel {
+    margin: 0px auto;
+  }
+
+  .con11 .travel .trip2 p {
+    display: none;
+  }
+  .con11 .travel .trip2 h3 {
+    display: none;
+  }
+  .con11 .travel .trip2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .con11 .travel {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* con12  */
+
+  .con12 .artWork .art1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  /* con13  */
+  .con13 .business .bus1 {
+    display: none;
+  }
+
+  .con13 .business .bus2 {
+    width: 20%;
+    height: 20%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .con13 .business .simply-scroll-clip {
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+    /* transform: rotate(-5deg); */
+  }
+  .con13 .business .simply-scroll-clip img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* 위에서 여기까지 반응형 css */
+/*  */
+/*  */
+/* 아래부터 */
 /* 공통 스타일 */
 .wrap {
   width: 100%;
@@ -338,8 +552,10 @@ section {
 #visual {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(10deg, #5e936c 30%, #e8ffd7 60%, #93da97 80%);
+  background-color: #5e936c;
+  /* background: linear-gradient(10deg, #5e936c 30%, #e8ffd7 60%, #93da97 80%); */
   overflow: hidden;
+  color: #ffffff;
 }
 
 /* #visual top */
@@ -426,11 +642,9 @@ section {
 
 /* strok  */
 #visual .strok {
-  /* width: 100%; */
-  transition: 1s;
-  font-size: 16vw;
+  transition: 0.5s;
+  font-size: 18vw;
   text-align: center;
-  /* transform: translateY(-100px); */
   color: #93da97;
 }
 #visual .strok:hover {
@@ -445,7 +659,6 @@ section {
 .object {
   z-index: -100;
   width: 100%;
-  height: 100%;
 }
 
 .object .circle01,
@@ -557,7 +770,7 @@ section {
   font-size: 20px;
   cursor: default;
 }
-.con01 .top > div:first-child {
+.con01 .top > div {
   color: #5e936c;
 }
 .con01 .top div {
@@ -858,6 +1071,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 10px;
+  position: relative;
+  z-index: 100;
 }
 
 .mockup .mbox2 {
@@ -994,6 +1209,7 @@ section {
   font-weight: 500;
   position: relative;
   z-index: 200;
+  color: #fff;
 }
 .numberBtn > div {
   background-color: #93da97;
@@ -1032,6 +1248,13 @@ section {
 /* con04  */
 .con04 .numberDesign {
   width: 30%;
+  position: relative;
+  z-index: 200;
+}
+.con04 .numberDesign img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .con04 .numberDesign > div {
   padding: 10px;
@@ -1082,6 +1305,11 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.con05 .Todotext img {
+  width: 100%;
+
+  object-fit: cover;
 }
 .con05 .Todotext h3 {
   margin: 30px 0;
@@ -1173,6 +1401,11 @@ section {
   position: relative;
   z-index: 100;
 }
+.con06 .weather .w3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .con06 .weather .w3 h3 {
   margin: 30px 0;
 }
@@ -1239,7 +1472,12 @@ section {
 /* m2  */
 .con07 .m2 {
   width: 30%;
+  position: relative;
   z-index: 200;
+}
+.con07 .m2 img {
+  width: 100%;
+  object-fit: cover;
 }
 .con07 .m2 h3 {
   margin: 30px 0;
@@ -1269,7 +1507,6 @@ section {
 .con08 .full .fu1 {
   width: 70%;
   border-radius: 10px;
-  position: relative;
   z-index: 200;
 }
 .con08 .full .fu1 > ul {
@@ -1304,7 +1541,7 @@ section {
   width: 30%;
   color: #e8ffd7;
   background-color: #5e936c;
-  padding: 30px;
+  padding: 20px;
   border-radius: 30px;
   position: relative;
   z-index: 200;
@@ -1318,7 +1555,7 @@ section {
 }
 .con08 .fu2 p {
   word-break: keep-all;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .con08 .fu2 .numberBtn ul img {
@@ -1346,7 +1583,7 @@ section {
   display: flex;
   color: #5e936c;
   width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
   gap: 30px;
 }
 .con09 .dessert .d1 {
@@ -1413,7 +1650,7 @@ section {
 .con10 .hotel {
   display: flex;
   width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
   gap: 30px;
 }
 .con10 .hotel .ho1 {
@@ -1474,7 +1711,7 @@ section {
   margin: 100px auto;
   gap: 30px;
 }
-.con11 .travel .trip1 ul {
+.con11 .travel .trip1 > ul {
   display: flex;
   overflow: hidden;
   border-radius: 30px;
@@ -1489,10 +1726,15 @@ section {
   z-index: 100;
 }
 .con11 .travel .trip1 > div {
-  background-color: #e8ffd7;
+  background-color: #5e936c;
   padding: 10px;
   border-radius: 30px;
-  color: #5e936c;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  /* color: #5e936c; */
+}
+.con11 .travel .trip1 .numberBtn {
+  background-color: transparent;
 }
 .con11 .travel .trip2 {
   width: 30%;
@@ -1668,11 +1910,13 @@ section {
 }
 .con14 .cafe img {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .con14 .cafe .ca1 {
   width: 40%;
-  height: 100%;
   text-align: center;
   position: relative;
   z-index: 100;
@@ -1715,9 +1959,12 @@ section {
   scale: 0.9;
 }
 
+.con14 .ca3 h3 {
+  margin: 30px 0;
+}
 .con14 .ca3 {
   width: 30%;
-  color: #5e936c;
+  color: #333;
 }
 
 /* con15 */
@@ -1741,7 +1988,7 @@ section {
 }
 .insta img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 .insta .in1 {
@@ -1771,7 +2018,8 @@ section {
 .contact {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(15deg, #e8ffd7 10%, #93da97 40%, #5e936c 100%);
+  background-color: #5e936c;
+  /* background: linear-gradient(15deg, #93da97 10%, #5e936c 100%); */
   position: relative;
 }
 .contact .top {
@@ -1779,6 +2027,7 @@ section {
   justify-content: space-between;
   padding: 40px;
   font-size: 20px;
+  color: #fff;
 }
 .contact .endWrap {
   width: 80%;
@@ -1795,29 +2044,34 @@ section {
   z-index: 200;
 }
 .contact .end1 h2 {
-  font-size: 120px;
-  font-family: "SebangGothic";
-  margin-bottom: 200px;
+  font-size: 150px;
+  font-family: "Cafe24Dangdanghae";
+  margin: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.contact .end2 p {
+  letter-spacing: -1px;
+  line-height: 1.8;
+  font-size: 22px;
+  color: #ffffff;
 }
 .contact .end2 {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 50px 0;
   position: relative;
   z-index: 200;
+  text-align: center;
 }
-/* .contact .end2 > div {
-  width: calc(100% / 2);
-} */
-.contact .end2 > div:first-child p {
-  font-size: 30px;
-  color: #333;
+
+.end3 {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  color: #fff;
 }
-.contact .end2 > div:last-child p {
-  line-height: 2;
-  color: #333;
-}
+
 .contact .object .circle01 {
   background-image: radial-gradient(
     circle at bottom left,
