@@ -148,29 +148,190 @@ p {
   font-size: 18px;
 }
 
+/* 웹 표준 */
 /* pc  */
 @media (min-width: 1024px) {
+  section {
+    width: 1200px;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
 }
 
+/* 테블릿 */
 /* tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* 공통 스타일 */
+  .wrap {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  h3 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 22px;
+  }
+  p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  /* visual */
+  #visual .bottom p {
+    font-size: 14px;
+  }
+
+  /* con01  */
+  .con01 .resume-container li {
+    font-size: 16px;
+  }
+  /* con02 */
+  .con02 .brandingBox01 span {
+    font-size: 23px;
+  }
+  .con02 .brandingBox01 p {
+    font-size: 16px;
+  }
+  .con02 .brandingBox02 p {
+    font-size: 16px;
+  }
+  .con02 .brandingBox01 h3 {
+    font-size: 20px;
+  }
+  .con02 .brandingBox02 h3 {
+    font-size: 20px;
+  }
+
+  /* con03  */
+  .con03 .mockup .mbox1 {
+    display: none;
+  }
+  .con03 .mockup .mbox2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .con03 .mockup .mbox2 li img {
+    border-radius: 10px;
+  }
+  .con03 .daily h3 {
+    font-size: 25px;
+  }
+
+  /* con07  */
+  .con07 .movie {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  .con07 .movie .m1 {
+    width: 100%;
+  }
+  .con07 .movie .m2 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
 }
 
+/* 모바일 */
 /* mobile */
 @media (max-width: 767px) {
+  /* 공통 스타일  */
+  .wrap {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  h3 {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 20px;
+  }
+  p {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 13px;
+  }
+  /* con01  */
+  /* --- 반응형 디자인 --- */
+
+  .con01 .resume-container {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  /* 화면이 좁아지면 카드들을 세로로 쌓음 */
+  .con01 .section-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .con01 .info-card {
+    min-height: auto;
+  }
+
+  /* con02 */
+  .con02 .brandingBox01 span {
+    font-size: 23px;
+  }
+  .con02 .brandingBox01 p {
+    font-size: 16px;
+  }
+  .con02 .brandingBox02 p {
+    font-size: 16px;
+  }
+  .con02 .brandingBox01 h3 {
+    font-size: 20px;
+  }
+  .con02 .brandingBox02 h3 {
+    font-size: 20px;
+  }
+
+  /* con03  */
+  .con03 .mockup .mbox1 {
+    display: none;
+  }
+  .con03 .daily h3 {
+    font-size: 30px;
+  }
+  .con03 .daily p {
+    font-size: 15px;
+  }
+
+  /* con07  */
+  .con07 .movie {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  .con07 .movie .m1 {
+    width: 100%;
+  }
+  .con07 .movie .m2 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
 }
 
-/* 스타일 */
+/* 공통 스타일 */
 .wrap {
   width: 100%;
   margin: 0px auto;
   color: #e8ffd7;
+  overflow: hidden;
 }
-section {
-  width: 1200px;
-  height: 100vh;
+#container {
+  width: 100%;
+  margin: 0px auto;
   overflow: hidden;
   box-sizing: border-box;
+}
+section {
+  width: 100%;
+  height: 100%;
 }
 
 /* #visual */
@@ -269,7 +430,7 @@ section {
   transition: 1s;
   font-size: 16vw;
   text-align: center;
-  transform: translateY(-100px);
+  /* transform: translateY(-100px); */
   color: #93da97;
 }
 #visual .strok:hover {
@@ -415,7 +576,6 @@ section {
 /* --- 전체 컨테이너 스타일 --- */
 .resume-container {
   width: 80%;
-  max-width: 1200px;
   margin: 0px auto;
   padding: 10px;
   box-sizing: border-box;
@@ -494,23 +654,6 @@ section {
   height: auto; /* 뱃지 이미지 크기 */
 }
 
-/* --- 반응형 디자인 --- */
-@media (max-width: 768px) {
-  .resume-container {
-    padding: 20px;
-  }
-
-  /* 화면이 좁아지면 카드들을 세로로 쌓음 */
-  .section-row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .info-card {
-    min-height: auto;
-  }
-}
-
 /* ---------------------- */
 
 /* con01 애니메이션 효과*/
@@ -585,7 +728,9 @@ section {
   z-index: 20;
 }
 .logoImg img {
-  width: 500px;
+  width: 80%;
+
+  object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -600,7 +745,7 @@ section {
 
 .branding .name {
   background-color: #5e936c;
-  width: 550px;
+  width: 80%;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -617,7 +762,7 @@ section {
 .branding .meaning,
 .slogan {
   background-color: #5e936c;
-  width: 550px;
+  width: 80%;
   margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
@@ -628,7 +773,7 @@ section {
 .text2 .brandColor,
 .brandFont {
   background-color: #5e936c;
-  width: 550px;
+  width: 80%;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -642,15 +787,14 @@ section {
   display: flex;
   justify-content: center;
   width: calc(100% / 2);
-  gap: 50px;
+  gap: 10px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .brandingBox02 .text1 div {
-  width: 150px;
-  height: 150px;
+  width: 40%;
+  height: 60%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
   transition: 0.5s;
 }
 .brandingBox02 .text1 div:hover {
@@ -660,6 +804,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 .brandingBox02 .text1 div p {
   font-weight: 700;
@@ -717,7 +862,8 @@ section {
 
 .mockup .mbox2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .mockup .mbox2 ul {
@@ -839,12 +985,15 @@ section {
 .numberBtn {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   text-align: center;
   font-size: 20px;
   font-family: "Pretendard";
   font-weight: 500;
+  position: relative;
+  z-index: 200;
 }
 .numberBtn > div {
   background-color: #93da97;
@@ -909,8 +1058,8 @@ section {
 
 .con05 .TodoWrap {
   width: 80%;
-
   margin: 100px auto;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -939,6 +1088,8 @@ section {
 }
 .con05 .TodoBg {
   margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
 }
 .con05 .TodoBg img {
   width: 100%;
@@ -964,7 +1115,7 @@ section {
 
 .con06 .weather {
   width: 80%;
-  height: 80%;
+  height: 60%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -1045,7 +1196,7 @@ section {
 }
 .con07 .movie {
   width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
   display: flex;
 }
 
