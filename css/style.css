@@ -1268,11 +1268,11 @@ section {
   position: relative;
   z-index: 200;
 }
-.con04 .numberDesign img {
+/* .con04 .numberDesign img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 .con04 .numberDesign > div {
   padding: 10px;
 }
