@@ -1,39 +1,3 @@
-// $(function () {
-//   let total = $(".w2 ul li").length;
-//   let i = 0;
-//   setInterval(function () {
-//     if (i == total - 1) {
-//       i = 0;
-//     } else {
-//       i++;
-//     }
-//     $(".w2 ul li").stop().fadeOut();
-//     $(".w2 ul li").eq(i).stop().fadeIn();
-//   }, 2000);
-// });
-
-// test
-// $(function () {
-//   $("li").on("mouseenter", function () {
-//     $(this).find("h3").fadeIn();
-
-//     $("p").css({ color: "#eee" });
-//     $(this).find("p").css({ color: "#aaa" });
-
-//     $("li").css({ width: "calc(100% / 5)" });
-//     $(this).css({ width: "500px" });
-
-//     $("li h3").hide();
-//     $(this).find("h3").show();
-
-//     $("span").hide();
-//     $(this).find("span").show();
-
-//     $("span").css({ color: "#eee" });
-//     $(this).find("span").css({ "background-color": "#aaa" });
-//   });
-// });
-
 // con06
 // 날씨 이미지 슬라이드
 setInterval(function () {
@@ -61,15 +25,6 @@ setInterval(function () {
 }, 2800);
 
 // con08
-// 팀프로젝트 상하슬라이드
-// setInterval(function () {
-//   $(".con08 .fu1 ul").animate({ "margin-top": "-100%" }, function () {
-//     $(".con08 .fu1 ul li:first-child").appendTo(".con08 .fu1 ul");
-//     $(".con08 .fu1 ul").css({ "margin-top": "0px" });
-//   });
-// }, 2800);
-
-// con08
 $(function () {
   let total = $(".fu1 > ul > li").length;
   let i = 0;
@@ -86,9 +41,9 @@ $(function () {
 
 // con11 여행사 슬라이드
 setInterval(function () {
-  $(".trip1 ul").animate({ "margin-left": "-100%" }, function () {
-    $(".trip1 ul li:first-child").appendTo(".trip1 ul");
-    $(".trip1 ul").css({ "margin-left": "0px" });
+  $(".trip1 > ul").animate({ "margin-left": "-100%" }, function () {
+    $(".trip1 > ul > li:first-child").appendTo(".trip1 > ul");
+    $(".trip1 > ul").css({ "margin-left": "0px" });
   });
 }, 2800);
 
