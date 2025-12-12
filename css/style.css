@@ -517,6 +517,8 @@ section {
 
 .info-card {
   transition: 0.3s;
+  position: relative;
+  z-index: 100;
 }
 .info-card:hover {
   transform: translateY(-5px);
@@ -1152,9 +1154,10 @@ section {
 .con08 .full .fu2 {
   width: 30%;
   color: #e8ffd7;
-  background-color: #5e936c;
+  text-align: center;
+  /* background-color: #5e936c; */
   padding: 30px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   position: relative;
   z-index: 200;
 }
