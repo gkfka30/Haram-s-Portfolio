@@ -597,27 +597,32 @@ section {
   position: relative;
 }
 #visual .mid ul {
-  width: 4000px;
+  width: 7000px;
   display: flex;
   gap: 50px;
   transform: rotate(0deg);
-  font-size: 55px;
+  font-size: 50px;
   font-style: italic;
   letter-spacing: -2px;
   z-index: 100;
   position: absolute;
   top: 0px;
   left: 0px;
+  animation: scroll 20s linear infinite;
 }
 #visual .mid ul li {
-  animation: scroll 6s linear infinite;
+  width: 100%;
+  text-align: center;
 }
+/* #visual .mid ul li {
+  animation: scroll 6s linear infinite;
+} */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-50% - 25px));
   }
 }
 
