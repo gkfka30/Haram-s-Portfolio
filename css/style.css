@@ -667,6 +667,7 @@ section {
   font-size: 15vw;
   text-align: center;
   color: #93da97;
+  transform: translateY(-120px);
 }
 #visual .strok:hover {
   color: transparent;
